@@ -7,20 +7,20 @@ mkhomedir_helper username
 
 
 #nardi 5 map
-start=1
-ends=5
-for((i=$start;i<=$end;i++))
+
+for i in 1 2 3 4 5
 do
-mkdir "folder${i}"
+mkdir folder_${i}
 done
 
 
+
 #nardi 5 uporabnikov z domačo mapo
-start=1
-ends=5
-for((i=$start;i<=$end;i++))
+
+
+for i in 1 2 3 4 5
 do
-useradd -m uporabnik${i}
+sudo useradd -m uporabnik${i}
 sudo usermod -aG sudo uporabnik${i}
 done
 
