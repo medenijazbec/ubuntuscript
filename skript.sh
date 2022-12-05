@@ -42,12 +42,12 @@ sudo apt install nginx
 cd /var/www
 sudo mkdir primer
 cd primer
-sudo "${EDITOR:-vi}" index.html
+
 
 cd /etc/nginx/sites-enabled
-sudo "${EDITOR:-vi}" primer
-sudo service nginx restart
 
+sudo service nginx restart
+cd ..
 #install net-tools
 sudo apt-get -y install net-tools
 sudo apt update
