@@ -24,6 +24,7 @@ sudo useradd -m uporabnik${i}
 sudo usermod -aG sudo uporabnik${i}
 done
 
+less /etc/passwd
 #sudo apt-get update && sudo apt-get upgrade
 
 #ufw firewall
